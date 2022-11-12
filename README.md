@@ -1,6 +1,6 @@
 # Module_13_Challenge
 ## Alphabet Soup, Analysis using a Neural Network Model
-![Screenshot_header](./screenshots/Screenshot_header.png)
+![Screenshot_header](Screenshots/Screenshot_header.png)
 
 ## Background
 Working as a risk management associate at Alphabet Soup, and the business team receives many funding applications from startups every day. I have been asked to help them create a model that predicts whether applicants will become successful if funded by Alphabet Soup.
@@ -31,23 +31,23 @@ Using knowledge of TensorFlow and Keras, I was able to optimise model however it
 
 ### Preparing the data to be used on a neural network model.
 
-![Screenshot_1](./screenshots/Screenshot_1.png)
+![Screenshot_1](screenshots/Screenshot_1.png)
 
 I then reveiwed the types associated with the columns.
 
-![Screenshot_2](./screenshots/Screenshot_2.png)
+![Screenshot_2](screenshots/Screenshot_2.png)
 
 I dropped the “EIN” (Employer Identification Number) and “NAME” columns from the DataFrame. and reviewed the DataFrame.
 
-![Screenshot_3](./screenshots/Screenshot_3.png)
+![Screenshot_3](screenshots/Screenshot_3.png)
 
 I used `OneHotEncoder` to encode the datasets catergorical variables, and then placed the encoded variables into a new DataFrame.
 
-![Screenshot_4](./screenshots/Screenshot_4.png)
+![Screenshot_4](screenshots/Screenshot_4.png)
 
 I then added the original DataFrames numerical variables to the DataFrame.
 
-![Screenshot_5](./screenshots/Screenshot_5.png)
+![Screenshot_5](screenshots/Screenshot_5.png)
 
 Using the preprocessed data, I created the features (`X`) and target (`y`) datasets. The target dataset was defined by the preprocessed DataFrame column “IS_SUCCESSFUL”. The remaining columns were defined the features dataset.  I then split and processed the data using train_test_split(X, y, random_state=1) and scikit-learn's StandardScaler. I compiled and evaluated a Binary Classification model using a Neural Network. I compiled and fitted the model using binary_crossentropy loss fuinction, the adam optimizer and the accuracy evaluation metric before saving and exporting the model.
 
@@ -57,15 +57,15 @@ I then made two more alternative models;
 
 ### Original Model Results
 
-![Screenshot_6](./screenshots/Screenshot_6.png)
+![Screenshot_6](screenshots/Screenshot_6.png)
 
 ### Alternative Model 1 Results
 
-![Screenshot_7](./screenshots/Screenshot_7.png)
+![Screenshot_7](screenshots/Screenshot_7.png)
 
 ### Alternative Model 2 Results
 
-![Screenshot_8](./screenshots/Screenshot_8.png)
+![Screenshot_8](screenshots/Screenshot_8.png)
 
 Results were saved to the AlphabetSoup.h5 file.
 
